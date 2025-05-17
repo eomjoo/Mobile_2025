@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:padding="16dp">
+
+    <!-- 상단 타이틀 -->
+    <TextView
+        android:id="@+id/selectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT A CHARACTER"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- 첫 번째 줄 -->
+    <LinearLayout
+        android:id="@+id/topRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectTitle">
+
+        <!-- 캐릭터 1: INUYASHA (선택 가능) -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/charInuyasha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:src="@drawable/swordmaster" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AA000000"
+                android:text="INUYASHA"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <!-- 캐릭터 2: KAGOME (선택 가능) -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/charKagome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:src="@drawable/swordmaster" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AA000000"
+                android:text="KAGOME"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <!-- 캐릭터 3: KAGURA (잠금) -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/charKagura"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:src="@drawable/swordmaster" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AA000000"
+                android:text="KAGURA"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <!-- 캐릭터 4: KOGA (잠금) -->
+        <!-- 동일한 방식으로 구성 -->
+    </LinearLayout>
+
+    <!-- 두 번째 줄도 위와 동일하게 반복해서 만든다. -->
+    <!-- 캐릭터: SANGO, MIROKU, SESSHOMARU, NARAKU -->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,8 +13,28 @@
         android:theme="@style/Theme.Moblie"
         tools:targetApi="31">
         <activity
+            android:name=".EnemySelectActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".CharacterSelect"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DifficultyActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="DiscouragedApi" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="DiscouragedApi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

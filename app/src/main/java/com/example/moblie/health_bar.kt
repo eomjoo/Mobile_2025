@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
+import com.example.moblie.R
 
 class health_bar : AppCompatActivity() {
 
@@ -15,10 +16,10 @@ class health_bar : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(kr.ac.jbnu.kangdongki.inuyasha2.R.layout.activity_skills_choose)
+        setContentView(R.layout.activity_skills_choose)
 
-        yourHealthBar = findViewById(kr.ac.jbnu.kangdongki.inuyasha2.R.id.yourHealthBar)
-        enemyHealthBar = findViewById(kr.ac.jbnu.kangdongki.inuyasha2.R.id.enemyHealthBar)
+        yourHealthBar = findViewById(R.id.yourHealthBar)
+        enemyHealthBar = findViewById(R.id.enemyHealthBar)
         yourHealthBar.progress = yourHealth
         enemyHealthBar.progress = enemyHealth
 

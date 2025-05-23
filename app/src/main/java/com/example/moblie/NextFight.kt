@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.moblie.R
 
 @Suppress("DEPRECATION")
 class NextFight : AppCompatActivity() {

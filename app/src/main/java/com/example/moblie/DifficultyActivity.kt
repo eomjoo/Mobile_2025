@@ -9,11 +9,11 @@ import kr.ac.jbnu.kangdongki.inuyasha2.Play
 
 
 class DifficultyActivity : BaseActivity() {
-    private lateinit var binding: DifficultyActivityBinding
+    private lateinit var binding: ActivityDifficultyBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DifficultyActivityBinding.inflate(layoutInflater)
+        binding = ActivityDifficultyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //난이도 버튼 추가

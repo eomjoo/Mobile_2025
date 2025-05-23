@@ -16,6 +16,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.moblie.R
 
 open class skills : AppCompatActivity() {
     private lateinit var btnContinue: Button
@@ -96,8 +97,8 @@ open class skills : AppCompatActivity() {
             enemyImage.setImageResource(opponentChampion)
         }
 
-        yourHealthBar = findViewById(kr.ac.jbnu.kangdongki.inuyasha2.R.id.yourHealthBar)
-        enemyHealthBar = findViewById(kr.ac.jbnu.kangdongki.inuyasha2.R.id.enemyHealthBar)
+        yourHealthBar = findViewById(R.id.yourHealthBar)
+        enemyHealthBar = findViewById(R.id.enemyHealthBar)
         yourHealthBar.progress = yourHealth
         enemyHealthBar.progress = enemyHealth
 

@@ -5,14 +5,15 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.moblie.databinding.ActivityDifficultyBinding
+import kr.ac.jbnu.kangdongki.inuyasha2.Play
 
 
 class DifficultyActivity : BaseActivity() {
-    private lateinit var binding: ActivityDifficultyBinding
+    private lateinit var binding: DifficultyActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDifficultyBinding.inflate(layoutInflater)
+        binding = DifficultyActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //난이도 버튼 추가

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.ImageView
 import android.content.Intent
 import android.widget.Button
-import com.example.moblie.R
 
 class character: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

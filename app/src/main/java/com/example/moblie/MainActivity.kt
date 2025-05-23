@@ -18,6 +18,7 @@ class MainActivity : BaseActivity() {
         binding.playButton.setOnClickListener {
             val intent = Intent(this, DifficultyActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

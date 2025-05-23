@@ -21,6 +21,7 @@ class DifficultyActivity : BaseActivity() {
             val intent = Intent(this, Play::class.java)
             intent.putExtra("difficulty", "normal")
             startActivity(intent)
+            finish()
         }
         binding.hardButton.setOnClickListener {
             Toast.makeText(this, getString(R.string.update_message), Toast.LENGTH_SHORT).show()

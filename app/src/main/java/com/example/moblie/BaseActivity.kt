@@ -7,7 +7,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * BaseActivity1234
+ * BaseActivity
  * - 모든 화면에서 전체화면 적용 (위에 시간,메뉴바 안보이게 설정)
  * - startActivity(), startActivityForResult()에 페이드 인/아웃 전환 애니메이션 자동 적용 (클릭시 화면전환 방식)
  * - 이 클래스를 상속하면 별도의 설정 없이 상태바/내비게이션바 제거 및 부드러운 화면 전환 가능스

@@ -17,7 +17,7 @@ class DifficultyActivity : BaseActivity() {
 
         //난이도 버튼 추가
         binding.normalButton.setOnClickListener {
-            val intent = Intent(this, CharacterSelect::class.java)
+            val intent = Intent(this, Play::class.java)
             intent.putExtra("difficulty", "normal")
             startActivity(intent)
         }
